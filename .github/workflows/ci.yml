@@ -1,6 +1,6 @@
-name: ci
+name: Verify
 
-on: [push, pull_request]
+on: [workflow_call]
 
 jobs:
   setup:
