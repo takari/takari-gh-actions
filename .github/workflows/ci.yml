@@ -1,16 +1,12 @@
 name: Verify
 
-inputs:
-  jdk-matrix:
-    description: jdk matrix as json array
-    required: false
-    default: '[ 8, 11, 17, 21 ]'
-
 on:
-  push:
-    branches:
-      - master
-  pull_request:
+  workflow_call:
+    inputs:
+      jdk-matrix:
+        description: jdk matrix as json array
+        required: false
+        default: '[ 8, 11, 17, 21 ]'
 
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
