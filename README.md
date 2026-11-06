@@ -22,7 +22,7 @@ on:
 jobs:
   build:
     name: Verify
-    uses: takari/takari-gh-actions/.github/workflows/ci.yml@v1
+    uses: takari/takari-gh-actions/.github/workflows/ci.yml@v5
 
 ```
 
